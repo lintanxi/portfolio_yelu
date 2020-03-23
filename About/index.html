@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<!-- saved from url=(0040)https://www.jonasmai.com/html/about.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+  <title>Ye Lu</title>
+
+  <link href="./about_files/css" rel="stylesheet">
+  <link href="./about_files/css(1)" rel="stylesheet">
+  <link rel="shortcut icon" href="../img/yl.ico" type="image/x-icon">
+
+  <script src="./about_files/jquery.min.js"></script>
+  <script src="./about_files/bootstrap.min.js"></script>
+  <script src="./about_files/swiper.min.js"></script>
+  <script src="./about_files/ScrollMagic.js"></script>
+  <link href="./about_files/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./about_files/swiper.css">
+  <link rel="stylesheet" type="text/css" href="./about_files/style.css">
+  <style type="text/css">
+
+.circle{
+  width: 20px;
+  height: 20px;
+  border: 1px solid #1485BF;
+  position: absolute;
+  border-radius: 15px;
+}
+</style>
+
+</head>
+<body>
+  <nav id="menu" class="navbar navbar-default navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+          <a id="brand" class="navbar-brand" href="/"><img src="../img/yl.ico" alt="icon" style="width:30px;height:30px"></a>
+      </div>
+      <ul class="nav navbar-nav navbar-right">
+        <li class="backButton in"><a href="/">Work</a></li>
+        <!-- <li class="backButton in"><a href="https://medium.com/@stanlynlu" target="_blank">Blog</a></li> -->
+        <li><a href="../Playground">Playground</a></li>
+        <li><a href="../About"><b>About</b></a></li>
+      </ul>
+    </div>
+
+
+    <div id="sidenav">
+      <div class="sideNavlinks">
+        <a href="/">Work</a>
+        <!-- <a href="https://medium.com/@stanlynlu" target="_blank">Blog</a> -->
+        <a href="../Playground">Playground</a>
+        <a href="../About">About</a>
+      </div>
+      <div class="sidenavContact">
+
+
+    <div id="burgerButton">
+      <span></span>
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </nav>
+
+  <div class="Portfolio-Container">
+
+    <div class="about_box">
+      <div class="row">
+        <div style="margin-top: 30px;">
+        <div class="col-md-5 appear in" style="margin-bottom:30px;">
+          <img class="img-responsive" id="image" src="./about_files/mememe.jpg">
+          <script type="text/javascript">
+
+        document.onmousemove = animateCircles;
+
+        var colors = ['#ccc','#CA5E4','#1D91CD'];
+
+        function animateCircles (event) {
+
+          if (event.clientX - 150 >= image.offsetLeft && event.clientY - 150 >= image.offsetTop && event.clientX - 180 <= image.offsetLeft+image.width && event.clientY - 180 <= image.offsetTop+image.height){
+
+          var circle = document.createElement("div");
+          circle.setAttribute("class", "circle");
+          document.body.appendChild(circle);
+
+          circle.style.left = event.clientX + 'px';
+          circle.style.top = event.clientY + 'px';
+
+          var color = colors[Math.floor(Math.random() * colors.length)];
+          circle.style.borderColor = color;
+
+          circle.style.transition = "all 0.5s linear 0s";
+
+          circle.style.left = circle.offsetLeft - 20 + 'px';
+          circle.style.top = circle.offsetTop - 20 + 'px';
+
+          circle.style.width = "50px";
+          circle.style.height = "50px";
+          circle.style.borderWidth = "5px";
+          circle.style.opacity = 0;
+
+        }
+
+        }
+
+      </script>
+        </div>
+        <div class="col-md-7  appear in" style="padding-left:25px;float:right;">
+
+          <p><b>Ye (Stanlyn) Lu | 林探惜</b></p>
+          <p>I am a designer, a writer, a video editor, and a storyteller. I have interdisciplinary background in UX design, Film Production, and East Asian Literature. I am a creative writer with 5 books and 9 songs published, and also I am an influencer on Chinese social platform <i>Douban</i>, <i>Weibo</i> and <i>WeChat</i> at the topics of culture, literature, emotions and amusement.
+            <br />
+            <br>As a creator and a content manager, I am working hard to make some fun stuffs more accessible. Although, the world may not be changed, in me, the tiger sniffs the rose.
+            <br />
+            <br> Check out my <a href="../resume_yelu.pdf" target="_blank" style="text-decoration:underline;"><b>Résumé.</b></a>
+            <br> Contact me through e-mail: <a href="mailto:stanlyn@nyu.edu"><b><u>stanlyn@nyu.edu</u></b>.</a>
+            <br />
+            <br />
+            <br />
+            <a href="https://www.linkedin.com/in/lintanxi/" target="_blank"><img class="spacer" src="./about_files/linkedin.png" width="35" height="35"></a>
+            <a href="https://www.douban.com/people/lintanxi/" target="_blank"><img class="spacer" src="./about_files/douban.png" width="35" height="35"></a>
+            <a href="https://medium.com/@stanlynlu" target="_blank"><img class="spacer" src="./about_files/medium.png" width="35" height="35"></a>
+
+          </p>
+
+
+        </div>
+      </div>
+    </div>
+    </div>
+
+  </div>
+  <script src="./about_files/index.js"></script>
+
+
+
+</body></html>
